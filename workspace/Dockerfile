@@ -1320,6 +1320,21 @@ RUN if [ ${INSTALL_GNU_PARALLEL} = true ]; then \
 ;fi
 
 ###########################################################################
+# Fish:
+###########################################################################
+
+USER root
+
+ARG INSTALL_FISH=true
+
+RUN if [ ${INSTALL_FISH} = true ]; then \
+  apt-get install software-properties-common \
+  && apt-add-repository ppa:fish-shell/release-3 \
+  && apt-get update \
+  && apt-get install -y fish \
+;fi
+
+###########################################################################
 # Bash Git Prompt
 ###########################################################################
 
