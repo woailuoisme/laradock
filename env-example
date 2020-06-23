@@ -14,7 +14,7 @@ APP_CODE_PATH_CONTAINER=/var/www
 APP_CODE_CONTAINER_FLAG=:cached
 
 # Choose storage path on your machine. For all storage systems
-DATA_PATH_HOST=~/.laradock/data
+DATA_PATH_HOST=/var/data
 
 ### Drivers ################################################
 
@@ -83,6 +83,7 @@ DOCKER_SYNC_STRATEGY=native_osx
 # If you want to use "Oh My ZSH!" with Laravel autocomplete plugin, set SHELL_OH_MY_ZSH to true.
 
 SHELL_OH_MY_ZSH=false
+
 
 ###########################################################
 ################ Containers Customization #################
