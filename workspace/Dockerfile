@@ -1075,7 +1075,8 @@ ARG INSTALL_PYTHON=false
 
 RUN if [ ${INSTALL_PYTHON} = true ]; then \
   apt-get -y install python python-pip python-dev build-essential  \
-  && pip config set global.index-url http://mirrors.cloud.aliyuncs.com/pypi/simple/ \
+  && python -m pip install pip -U
+  && python -m pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
   && python -m pip install --upgrade pip  \
   && python -m pip install --upgrade virtualenv \
 ;fi
