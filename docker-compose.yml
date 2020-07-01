@@ -892,7 +892,7 @@ services:
         - ./certbot/letsencrypt/:/var/www/letsencrypt
       environment:
         - CN="cjlj.info"
-        - EMAIL="ailuoga@126.com"
+        - EMAIL="ailuoga166@gmail.com"
       networks:
         - frontend
 
