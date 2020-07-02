@@ -1,7 +1,7 @@
 #!/bin/bash
 
 letsencrypt certonly --webroot -w /var/www/letsencrypt -d "$CN" \
-``-d "$CN_ADMIN" -d "$CN_API" \
+  -d "$CN_ADMIN" -d "$CN_API" -d "$CN_FILE" \
  --agree-tos --email "$EMAIL" --non-interactive --text
 
 cp /etc/letsencrypt/archive/"$CN"/cert1.pem /var/certs/cert1.pem

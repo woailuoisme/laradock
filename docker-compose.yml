@@ -895,6 +895,7 @@ services:
         - CN=cjlj.info
         - CN_API=api.cjlj.info
         - CN_ADMIN=admin.cjlj.info
+        - CN_FILE=file.cjlj.info
         - EMAIL=2811919555@qq.com
       networks:
         - frontend
