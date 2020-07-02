@@ -357,7 +357,7 @@ services:
         - ${NGINX_HOST_LOG_PATH}:/var/log/nginx
         - ${NGINX_SITES_PATH}:/etc/nginx/sites-available
         - ${NGINX_SSL_PATH}:/etc/nginx/ssl
-        - ./data/certbot/certs/:/var/certs
+        - ./data/certbot/certs/:/var/certs #映射certbot 容器 生成的key和Ncrt
         - ./certbot/letsencrypt/:/var/www/letsencrypt
       ports:
         - "${NGINX_HOST_HTTP_PORT}:80"
