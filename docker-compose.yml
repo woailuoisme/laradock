@@ -893,7 +893,7 @@ services:
         - /var/log/letsencrypt/:/var/log/letsencrypt
       environment:
         - CN="admin.cjlj.info"
-        - EMAIL="fake.email@gmail.com"
+        - EMAIL="2811919555@qq.com"
       networks:
         - frontend
 
