@@ -892,8 +892,8 @@ services:
         - ./certbot/letsencrypt/:/var/www/letsencrypt
         - /var/log/letsencrypt/:/var/log/letsencrypt
       environment:
-        - CN="admin.cjlj.info"
-        - EMAIL="2811919555@qq.com"
+        - CN=admin.cjlj.info
+        - EMAIL=2811919555@qq.com
       networks:
         - frontend
 
