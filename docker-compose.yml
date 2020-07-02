@@ -890,6 +890,7 @@ services:
       volumes:
         - ./data/certbot/certs/:/var/certs
         - ./certbot/letsencrypt/:/var/www/letsencrypt
+        - /var/log/letsencrypt/:/var/log/letsencrypt
       environment:
         - CN="admin.cjlj.info"
         - EMAIL="jhbwyl@126.com"
